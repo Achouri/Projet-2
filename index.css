@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'adamina-v13-latin-regular';
+    src: url('adamina-v13-latin-regular.eot') format('eot'),
+         url('adamina-v13-latin-regular.woff') format('woff'),
+         url('adamina-v13-latin-regular.ttf') format('truetype'),
+         url('adamina-v13-latin-regular.svg') format('svg');
+}
+
+body {
+	background-color:#ffffff;
+    display: flex;	
+	margin:0px;	
+}
+
+
+/*main*/
+#main{
+	font-family: 'adamina-v13-latin-regular';
+	width: 100%;
+	padding-left:5%;
+}
+
+
+/*header*/
+
+header{
+	height:100px;
+}
+h1{
+	font-weight:normal;
+}
+h1 span{
+	color:#feca07;
+	font-weight:bold;
+}
+hr{
+	border-top: 2px solid #FECA07;
+	width:100%;
+}
+
+
+/*conteneur*/
+
+
+.conteneur{
+	width:95%;
+}
+
+.conteneur h2{
+    margin-bottom: 0px;
+}
+.conteneur hr{
+    margin-top: 0px;
+}
+
+.electrotechnique{
+	display:flex;
+}
+.electrotechnique ul{
+	width:30%;
+}
+
+.transport{
+	display:flex;
+}
+.transport ul{
+	width:30%;
+}
+
+.responsable{
+	display:flex;
+}
+.responsable p{
+	width:60%;
+}
+.responsable ul{
+	width:30%;
+}
+.agent{
+	display:flex;
+}
+
+.agent p{
+	width:60%;
+}
+.agent ul{
+	width:30%;
+}
+
+
+/*Liseret*/
+img{ 
+	border-radius: 70% ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;	
+	margin-top:10%;
+}
+
+aside {
+	float:left;
+    width: 40%;
+	min-height: 100vh;
+	background-color: #feca07;
+    font-family:'adamina-v13-latin-regular';
+	text-align:left;
+	position:relative;
+}
+aside h2{
+	background-color:#404040;
+	color:#feca07; 
+	width:auto;
+	text-align:center;
+}
+.contact p{
+	padding-right:5%;
+	padding-left:5%;
+}
+.moi p{
+	padding-right:5%;
+	padding-left:5%;
+	text-align:justify;
+}
+
+.loisirs p{
+	text-align:center;
+}
+.loisirs{
+	margin-bottom:0px;
+	bottom:0px;
+	position:absolute;
+	width: -webkit-fill-available;
+}
+ 
+	
+
+@media screen and (max-width:850px)
+{
+
+body{
+    flex-direction: column;
+}
+/*liseret*/
+
+aside {
+    flex-direction: column;
+    width: auto;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: #feca07;
+    text-align: center;
+}
+.moi{
+	margin-bottom:0px;
+} 
+img{
+	width: 40%;
+    height: auto;
+	margin-top:5%;
+}
+
+.contact p{
+	text-align:left;
+	padding-left:5%;
+}
+	
+/*main*/
+
+header{
+	text-align: center;	
+}
+
+#main{
+	padding:0px;
+
+}
+.conteneur{
+	flex-direction:column;
+	padding:0px;
+	line-height:100%;
+	margin:0px;
+}
+
+.electrotechnique{
+	display: block;
+}
+.electrotechnique p{
+	margin-left:0px;
+}
+.transport{
+	display: block;
+}
+.transport p{
+	margin-left:0px;
+}
+.responsable{
+	display: block;
+}
+.responsable p{
+	margin-left:0px;
+}
+.agent{
+	display: block;
+}
+.agent p{
+	margin-left:0px;
+}
+}
